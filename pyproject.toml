@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "starlette-lego"
+version = "0.1.0"
+description = "LEGO OAuth2 library for Starlette and FastAPI"
+authors = ["nwunderly <nwunder.dev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+starlette = "^0.35.1"
+aiohttp = "^3.9.1"
+oauthlib = "^3.2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+
+[tool.poetry.group.docs.dependencies]
+Sphinx = "^7.2.6"
+sphinxcontrib-trio = "^1.1.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
